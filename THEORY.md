@@ -2,7 +2,7 @@
 
 Now let's get into the theory of the code
 
-### Difference between turn and rotate
+## Difference between turn and rotate
 
 First of all I need to clarify to you the difference between rotating and turning.<br> When turning you are moving forward and going either left or right. When rotating you are standing still and changing your direction.
 
@@ -10,14 +10,14 @@ First of all I need to clarify to you the difference between rotating and turnin
 
 This is a very common rookie mistake, they rotate every time the car leaves the track. It is in fact true that the car will still follow the track but it will take more time and power. For small deviations it is best to turn instead of rotating which will save us time and momentum.
 
-### Function-like behavior
+## Function-like behavior
 This code was written in such a way so that you can modify the accuracy based on two parameters, ```TurnSensitivity``` which can have any value from ```1 to 0```, and ```Max``` which can have any value from ```0 to 255```.
 
 ```TurnSensitivity``` is directly proportional to how much your car wobbles and inversely proportional to how much speed it has overall.<br>
 By utilizing a very simple mathematical based approach it will modify the speed at which your car turns most of the time. The exception to this is when your car has offshooted. In that case you want your car to rotate at full speed instead so that it may find the track again instantly.
 
 ```Max``` is the maximum speed your car can have at any time. The value you give it will not be exceeded throughout the execution. 0 is no speed at all and 255 is full speed.
-### Optimized control flow
+## Optimized control flow
 Let's take a look at the standard flow of code that you can find everywhere on YouTube<br>
 
 ![Standard control flow diagram](/images/Standard%20Control%20Flow.png)<br><br><br>
