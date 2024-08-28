@@ -52,4 +52,4 @@
 ## Step 3: Upload the code
 ## Step 4: Try it on different tracks!
 
-# [Code Theory](THEORY.md)
+# [Click here to view Code Theory](THEORY.md)
