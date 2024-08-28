@@ -13,7 +13,7 @@ This is a very common rookie mistake, they rotate every time the car leaves the 
 ## Function-like behavior
 This code was written in such a way so that you can modify the accuracy based on two parameters, ```TurnSensitivity``` which can have any value from ```1 to 0```, and ```Max``` which can have any value from ```0 to 255```.
 
-```TurnSensitivity``` is directly proportional to how much your car wobbles and inversely proportional to how much speed it has overall.<br>
+```TurnSensitivity``` is directly proportional to how much your car wobbles and also directly proportional to how much speed it has overall.<br>
 By utilizing a very simple mathematical based approach it will modify the speed at which your car turns most of the time. The exception to this is when your car has offshooted. In that case you want your car to rotate at full speed instead so that it may find the track again instantly.
 
 ```Max``` is the maximum speed your car can have at any time. The value you give it will not be exceeded throughout the execution. 0 is no speed at all and 255 is full speed.
